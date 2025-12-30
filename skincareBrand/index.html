@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skinimal | Pure Skincare</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container nav">
+            <h1 class="logo">Skinimal</h1>
+
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>Minimal Care. Maximum Glow.</h2>
+            <p>Clean, gentle and effective skincare made for real skin.</p>
+            <a href="#products" class="btn">Explore Products</a>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+        <h2 class="section-title">Our Services</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="./assets/imageone.png" alt="">
+                <p>Skin Consultation</p>
+            </div>
+            <div class="card">
+                <img src="./assets/imagetwo.png" alt="">
+                <p>Routine Planning</p>
+            </div>
+            <div class="card">
+                <img src="./assets/imagethree.png" alt="">
+                <p>Product Recommendation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section alt">
+        <h2 class="section-title">Our Products</h2>
+
+        <div class="grid">
+            <div class="product-card">
+                <img src="./assets/cleanser.png" alt="">
+                <h3>Gentle Cleanser</h3>
+                <p>Non-drying cleanser for sensitive skin.</p>
+                <div class="priceCart">
+                    <span class="price">₦8,000</span>
+                    <button class="add-to-cart" data-name="Gentle Cleanser" data-price="8000">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./assets/serum.png" alt="">
+                <h3>Hydrating Serum</h3>
+                <p>Deep hydration with hyaluronic acid.</p>
+                <div class="priceCart">
+                    <span class="price">₦12,000</span>
+                    <button class="add-to-cart" data-name="Hydrating Serum" data-price="12000">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./assets/moistourizer.png" alt="">
+                <h3>Daily Moisturizer</h3>
+                <p>Lightweight moisture for all skin types.</p>
+                <div class="priceCart">
+                    <span class="price">₦10,000</span>
+                    <button class="add-to-cart" data-name="Daily Moisturizer" data-price="10000">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+        <h2 class="section-title">Pricing</h2>
+        <div class="grid">
+            <div class="price-card">
+                <img src="./assets/consult.png" alt="">
+                <h3>Basic</h3>
+                <p>Consultation Only</p>
+                <p class="price">₦10,000</p>
+            </div>
+            <div class="price-card featured">
+                <img src="./assets/premium.png" alt="">
+                <h3>Standard</h3>
+                <p>Routine + Products</p>
+                <p class="price">₦25,000</p>
+            </div>
+            <div class="price-card">
+                <img src="./assets/routine.png" alt="">
+                <h3>Premium</h3>
+                <p>Full Skincare Package</p>
+                <p class="price">₦45,000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+        <h2 class="section-title">Contact Us</h2>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <textarea placeholder="Your Message"></textarea>
+            <button class="btn">Send Message</button>
+        </form>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps?q=lagos%20nigeria&output=embed" loading="lazy">
+            </iframe>
+        </div>
+
+        <a href="https://wa.me/2348000000000" class="whatsapp" target="_blank">
+            Chat on WhatsApp
+        </a>
+    </section>
+
+    <!-- CART ICON -->
+    <div class="cart-icon" id="cartIcon">
+        🛒 <span id="cartCount">0</span>
+    </div>
+
+    <!-- CART PANEL -->
+    <div class="cart" id="cart">
+        <h3>Your Cart</h3>
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+            Total: ₦<span id="cartTotal">0</span>
+        </div>
+
+        <button class="btn checkout-btn">Checkout</button>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Skinimal. All rights reserved. Developed by </p>
+        <a href="https://www.linkedin.com/feed/?trk=404_page" style="color: teal; text-decoration: none;">confidence mmesoma</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
